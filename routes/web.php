@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController; 
+use App\Http\Controllers\ImageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,5 +14,9 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get('/', function () {return view('welcome');});
-Route::get('/posts', [PostController::class, 'index']);   
+//Route::get('/', function () {return view('welcome');});
+Route::get('/', [PostController::class, 'index']);   
+Route::post('/upload',[ImageController::class,'upload']);
+Route::get('/upload',[Imagecontroller::class,'viewupload']);
+Route::get('/posts/{post}', [PostController::class ,'show']);
+
