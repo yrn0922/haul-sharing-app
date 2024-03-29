@@ -20,3 +20,5 @@ Route::post('/upload',[ImageController::class,'upload']);
 Route::get('/upload',[Imagecontroller::class,'viewupload']);
 Route::get('/posts/{post}', [PostController::class ,'show']);
 
+
+

@@ -15,6 +15,8 @@
                     <p class='body'>{{ $post->body }}</p>
                 </div>
             @endforeach
+                <p class='body'>購入品紹介サイトTOP</p>
+            <h3>投稿一覧</h3>
         </div>
          <a href='/upload'>新規投稿する</a>
     </body>

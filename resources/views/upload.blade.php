@@ -12,12 +12,12 @@
       <h1>Haul!</h1>
                 <h2>新規投稿</h2>
                 <input type="date" name="today" id="today">
-                <input type="text" name="post[title]" placeholder="タイトル"/>
+                <input type="text" name="title" placeholder="タイトル"/>
             </div>
             
             <div class="body">
               
-                <textarea name="post[body]" placeholder="文章を入力してください"></textarea>
+                <textarea name="body" placeholder="文章を入力してください"></textarea>
             </div>
   <input type="file" name="image">
  
