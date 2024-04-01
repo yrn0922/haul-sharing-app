@@ -13,8 +13,8 @@
      <h3 class="body">
             {{ $body }}
     </h3>
-       <img src="{{ asset($image->path) }}">
-       
+       <img src="{{ asset("storage/" . $image->filepath) }}">
+        <a href="/">戻る</a>
     </body>
 </html>
        
